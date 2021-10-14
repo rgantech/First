@@ -44,7 +44,7 @@ export default function Service(props) {
 
     return (
     <>
-    <div className="mb-3">
+    <div className="mb-4">
         <label htmlFor="exampleFormControlTextarea" className="my-5 form-label" style={props.sstyle}>{props.title}</label>
         <textarea style={props.sstyle} onChange={handleOnChange} className="form-control" value={mytext} id="exampleFormControlTextarea" rows="8"></textarea>
         <button disabled={mytext===''?true:false} type="button" onClick={runmyFun}  className={`mx-2 my-3 btn btn-${props.btnclr}`}>Uppercase</button>
